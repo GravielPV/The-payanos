@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/CSS/comida.css">
+    <title>Comida</title>
+    
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="header">
+            <button class="back-btn" onclick="location.href='index1.html'">←</button>
+
+            <a href="index1.html">Inicio</a>
+            <a href="bebidas.html">Bebidas</a>
+            <a href="postres.html" class="active">Postres</a>
+        </div>
+        
+        <div class="nav-tabs">
+            <button class="nav-tab active" data-tab="pizza">Pizza</button>
+            <button class="nav-tab" data-tab="extras">Mariscos</button>
+            <button class="nav-tab" data-tab="focaccia">Sandwiches</button>
+            <button class="nav-tab" data-tab="dolci">Helados</button>
+        </div>
+        
+        <div class="content">
+            <div class="tab-content active" id="pizza">
+                <div class="section-title">Pizza</div>
+                
+                <div class="menu-item">
+                    <img src="public/peperoni.png" alt="Peperoni">
+                    <div class="item-details">
+                        <div class="item-name">Peperoni</div>
+                        <div class="item-description">Salsa de tomate, Mozzarella, Salami Picante</div>
+                    </div>
+                    <div class="item-price">RD$ 315.00</div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=300&h=300&fit=crop" alt="Margherita">
+                    <div class="item-details">
+                        <div class="item-name">Margherita</div>
+                        <div class="item-description">Salsa de tomate, Mozzarella fresca, Albahaca</div>
+                    </div>
+                    <div class="item-price">RD$ 285.00</div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=300&h=300&fit=crop" alt="Quattro Stagioni">
+                    <div class="item-details">
+                        <div class="item-name">Quattro Stagioni</div>
+                        <div class="item-description">Salsa de tomate, Mozzarella, Jamón, Champiñones, Aceitunas</div>
+                    </div>
+                    <div class="item-price">RD$ 350.00</div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="extras">
+                <div class="section-title">Mariscos</div>
+                
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="public/Paella-Marisco.avif" alt="Alitas">
+                        <div class="card-content">
+                            <div class="card-title">Paella</div>
+                            <div class="card-description">Alitas de pollo marinadas con especias picantes</div>
+                            <div class="card-price">RD$ 180.00</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-card">
+                        <img src="public/Marisco-Ceviche.jpeg" alt="Ensalada">
+                        <div class="card-content">
+                            <div class="card-title">Ensalada Caprese</div>
+                            <div class="card-description">Tomate, mozzarella fresca, albahaca y aceite de oliva</div>
+                            <div class="card-price">RD$ 145.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                    
+                    
+            
+            <div class="tab-content" id="focaccia">
+                <div class="section-title">Sandwiches</div>
+                
+                <div class="menu-item">
+                    <img src="public/sandwich1.jpg" alt="Focaccia Rosemary">
+                    <div class="item-details">
+                        <div class="item-name">Club Sandwiches</div>
+                        <div class="item-description">Pan focaccia con aceite de oliva y romero fresco</div>
+                    </div>
+                    <div class="item-price">RD$ 125.00</div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="public/sandwich-de-pollo.jpg" alt="Focaccia Olive">
+                    <div class="item-details">
+                        <div class="item-name">Sandwich de Pollo</div>
+                        <div class="item-description">Pan focaccia con aceitunas negras y aceite de oliva</div>
+                    </div> 
+                    <div class="item-price">RD$ 135.00</div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="dolci">
+                <div class="section-title">Heledos</div>
+                
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="public/Helados-fresa.jpg" alt="Tiramisu">
+                        <div class="card-content">
+                            <div class="card-title">Fresa</div>
+                            <div class="card-description">Clásico postre italiano con mascarpone y café</div>
+                            <div class="card-price">RD$ 95.00</div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-card">
+                        <img src="public/Helados-chocolate.jpeg" alt="Panna Cotta">
+                        <div class="card-content">
+                            <div class="card-title">Chocolate</div>
+                            <div class="card-description">Cremoso postre con frutos rojos</div>
+                            <div class="card-price">RD$ 85.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+<script src="src/JS/app1.js"></script>
+</html>

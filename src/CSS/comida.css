@@ -1,0 +1,252 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .container a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+            opacity: 0.8;
+            background: #fff;
+            padding: 12px 28px;
+            border-radius: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+            font-size: 18px;
+            font-weight: 600;
+            opacity: 0.95;
+            z-index: 1000;
+            align-self: flex-end;
+            margin-left: 24px;  
+            pointer-events: auto;
+            transition: box-shadow 0.3s, color 0.3s, background-color 0.3s;
+            transition: background-color 0.3s;
+            }
+            .container a:hover {
+              background-color: #ddd;
+                color: #fff;
+                box-shadow: 0 8px 32px rgba(0,123,255,0.15);
+                opacity: 1;
+            }
+
+        .header {
+            background-color: #e8e8e8;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .back-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            margin-right: 15px;;
+            padding: 12px;
+            border-radius: 50%;
+            transition: background-color 0.3s;
+            background-color: #a3a4a5;
+            color: white;
+        }
+
+        .back-btn:hover {
+            background-color: #ddd;
+            color: #fff;
+        }
+
+        .nav-tabs {
+            display: flex;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .nav-tab {
+            padding: 15px 25px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 14px;
+            font-weight: 500;
+            color: #666;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-tab.active {
+            color: #007bff;
+            border-bottom-color: #007bff;
+            background-color: white;
+        }
+
+        .nav-tab:hover {
+            background-color: #f0f0f0;
+        }
+
+        .content {
+            padding: 30px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 300;
+            color: #666;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        .menu-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .item-details {
+            flex: 1;
+        }
+
+        .item-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .item-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        .item-price {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-left: 20px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .menu-card {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .card-price {
+            font-size: 18px;
+            font-weight: 600;
+            color: #007bff;
+            text-align: right;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .nav-tabs {
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            
+            .nav-tab {
+                padding: 12px 20px;
+                font-size: 12px;
+            }
+            
+            .menu-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .menu-item img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .item-price {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+ 
